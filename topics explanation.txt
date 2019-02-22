@@ -1,0 +1,35 @@
+Node js:
+
+node js makes possible to work with javascript in server side.
+- its runtime environment
+- javascripts in server or backend
+- without node js, javascript can not work in server
+- faster than others php, java (only web)
+
+Framework: library of structured code
+express is a node js Framework
+- framework makes ur code smarter and small
+- structured 
+- included a lot of other libraries
+
+What we need to learn about framework? e.g express
+SERVER:
+how backend javascript code can start and run (software server)
+- include express or anything or module ( using require() method )
+  require('express'); // framework or library
+  require('./models/user') // include module or any js file you created
+- app.listen();
+
+Router has routes/path/pages/where to go
+www.facebook.com that will go localhost:3000/
+www.facebook.com/login that will go localhost:3000/login
+app.get('/login');
+
+-**** all routes must have request, response  attributes 
+- shortcut res-response, req-request
+- inside routes you need header  for response 
+     res.send()
+     res.sendFile()
+     res.render()
+     res.json() // when u have no views or design
+- when no routes go to home by ('*')

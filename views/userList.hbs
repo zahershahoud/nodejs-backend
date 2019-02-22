@@ -1,0 +1,28 @@
+{{#if users}}
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <td>
+            {{id}}
+        </td>
+        <td>
+            {{name}}
+        </td>
+        <td>
+            {{email}}
+        </td>
+        <td>
+            {{phone}}
+        </td>
+
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

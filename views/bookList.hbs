@@ -1,0 +1,47 @@
+<h2>Book List</h2>
+<form action="/book/list" method="post">
+    <input type="text" name="writter">
+    <button type="submit" class="btn btn-success">Search Writter</button>
+</form>
+
+{{#if books}}
+<table id="customers">
+    <tr>
+        <th>Title </th>
+        <th>Writter </th>
+        <th>Year of Publich </th>
+        <th>Adding At</th>
+        <th>update At</th>
+        <th>Price <i class="fas fa-euro-sign"></i></th>
+        <th>Edit</th>
+
+    </tr>
+    {{#each books}}
+    <tr>
+        <td>
+            {{title}}
+        </td>
+        <td>
+            {{writter}}
+        </td>
+        <td>
+            {{yearOfPublich}}
+        </td>
+        <td>
+            {{createdAt}}
+        </td>
+        <td>
+            {{updateAt}}
+        </td>
+        <td>
+            {{price}}
+        </td>
+        <td>
+            <a href="/book/update/{{_id}}"><i class="fas fa-edit"></i></a>
+            <a href="/book/delete/{{_id}}"><i class="fas fa-trash-alt"></i></a>
+        </td>
+
+    </tr>
+    {{/each}}
+</table>
+{{/if}}
